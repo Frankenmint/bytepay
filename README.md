@@ -5,22 +5,22 @@ This guide will assist you in setting up a Bytepay Masternode on a Linux Server 
 If you require further assistance contact the support team @ [Discord](https://discord.gg/Gm89wHk)
 ***
 ## Requirements
-1) **5,000 BEPAY coins.**
+1) **At least 20,000 BEPAY coins.**
 2) **A Vultr VPS running Linux Ubuntu 16.04.**
 3) **A Windows local wallet.**
 4) **An SSH client such as [Bitvise](https://dl.bitvise.com/BvSshClient-Inst.exe)**
 ***
 ## Contents
-* **Section A**: Creating the VPS within [Vultr](https://www.vultr.com/?ref=7296974).
+* **Section A**: Creating the VPS within [Vultr](https://www.vultr.com/).
 * **Section B**: Downloading and installing Bitvise.
 * **Section C**: Connecting to the VPS and installing the MN script via Bitvise.
 * **Section D**: Preparing the local wallet.
 * **Section E**: Connecting & Starting the masternode.
 ***
 
-## Section A: Creating the VPS within [Vultr](https://www.vultr.com/?ref=7296974) 
+## Section A: Creating the VPS within [Vultr](https://www.vultr.com/) 
 ***Step 1***
-* Register at [Vultr](https://www.vultr.com/?ref=7296974)
+* Register at [Vultr](https://www.vultr.com/)
 ***
 
 ***Step 2***
@@ -66,8 +66,47 @@ If you require further assistance contact the support team @ [Discord](https://d
 ![Bitvise-Installer](https://i.imgur.com/yF3694G.png)
 ***
 
+## Section C: Preparing the Local wallet
 
-## Section C: Connecting to the VPS & Installing the MN script via Bitvise.
+***Step 1***
+* Download and install the Bytepay wallet [here](https://www.bytepay.org/#services)
+***
+
+***Step 2***
+* Send EXACLY 20,000 BEPAY to a receive address within your wallet.
+***
+
+***Step 3***
+* Create a text document to temporarily store information that you will need. 
+***
+
+***step 4***
+* Go to the console within the wallet 
+
+![console](https://i.imgur.com/2H8BHZw.png)
+***
+
+***Step 5***
+* Type the commands below and press enter
+
+`masternode genkey`
+
+![Masternode-genkey](https://i.imgur.com/WplwoJh.png)
+
+`masternode outputs` 
+
+![Masternode-outputs](https://i.imgur.com/GD7Ro1m.png)
+***
+
+***Step 6***
+* Copy your Masternode Genkey.
+* Copy the long key (this is your transaction ID) and the 1 or 0 at the end (this is your output index)
+* Paste these into the text document you created earlier as you will need them in the next step.
+***
+
+
+
+## Section D: Connecting to the VPS & Installing the MN script via Bitvise.
 
 ***Step 1***
 * Copy your VPS IP (you can find this by going to the server tab within Vultr and clicking on your server. 
@@ -119,7 +158,7 @@ If you require further assistance contact the support team @ [Discord](https://d
 ***
 
 ***Step 10***
-* When prompted to enter your Gen key - press enter
+* When prompted to enter your Gen key - copy from your text file and press enter
 
 ![installing](https://i.imgur.com/sLvWd1S.png)
 ***
@@ -130,43 +169,6 @@ If you require further assistance contact the support team @ [Discord](https://d
 ![installing](https://i.imgur.com/Q87LcnW.png)
 ***
 
-## Section D: Preparing the Local wallet
-
-***Step 1***
-* Download and install the Bytepay wallet [here](https://www.bytepay.org/#services)
-***
-
-***Step 2***
-* Send EXACLY 5,000 BEPAY to a receive address within your wallet.
-***
-
-***Step 3***
-* Create a text document to temporarily store information that you will need. 
-***
-
-***step 4***
-* Go to the console within the wallet 
-
-![console](https://i.imgur.com/2H8BHZw.png)
-***
-
-***Step 5***
-* Type the commands below and press enter
-
-`masternode genkey`
-
-![Masternode-genkey](https://i.imgur.com/WplwoJh.png)
-
-`masternode outputs` 
-
-![Masternode-outputs](https://i.imgur.com/GD7Ro1m.png)
-***
-
-***Step 6***
-* Copy your Masternode Genkey.
-* Copy the long key (this is your transaction ID) and the 1 or 0 at the end (this is your output index)
-* Paste these into the text document you created earlier as you will need them in the next step.
-***
 
 # Section E: Connecting & Starting the masternode 
 
